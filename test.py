@@ -1,7 +1,7 @@
 from app import CSS_Project
 
 def test_add_contact():
-    app = ContactsApp()
+    app = CSS_Project()
     app.add_contact("John Doe", "1234567890")
     app.add_contact("Jane Smith", "0987654321")
     app.add_contact("Alice Johnson", "5555555555")
@@ -40,7 +40,7 @@ def test_show_contacts(app):
     print("test_show_contacts passed")
 
 if __name__ == "__main__":
-    app = ContactsApp()
+    app = CSS_Project()
     test_add_contact()
     test_show_contacts(app)
     test_delete_contact(app)
