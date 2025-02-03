@@ -1,4 +1,4 @@
-from app import ContactsApp
+from app import CSS_Project
 
 def test_add_contact():
     app = ContactsApp()
