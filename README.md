@@ -18,7 +18,7 @@ This is a simple project built with Python. It allows you to manage your contact
 
 1. Clone the repository:
     ```sh
-    git clone <repository-url>
+    git clone [<repository-url>](https://github.com/r3ddA/CSS_Project.git)
     ```
 2. Navigate to the project directory:
     ```sh
