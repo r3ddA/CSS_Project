@@ -1,7 +1,7 @@
 from app import CSS_Project
 
 def test_add_contact():
-    app = CSS_Project()
+    app = ContactsApp()
     app.add_contact("John Doe", "1234567890")
     app.add_contact("Jane Smith", "0987654321")
     app.add_contact("Alice Johnson", "5555555555")
