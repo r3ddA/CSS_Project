@@ -40,7 +40,7 @@ def test_show_contacts(app):
     print("test_show_contacts passed")
 
 if __name__ == "__main__":
-    app = CSS_Project()
+    app = ContactsApp()
     test_add_contact()
     test_show_contacts(app)
     test_delete_contact(app)
