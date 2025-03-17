@@ -13,7 +13,7 @@ def initialize_db():
     conn.commit()
     conn.close()
 
-def add_contact(name, phone):
+def add_cotact(name, phone):
     conn = sqlite3.connect('contacts.db')
     cursor = conn.cursor()
     cursor.execute('INSERT INTO contacts (name, phone) VALUES (?, ?)', (name, phone))
@@ -27,16 +27,6 @@ def delete_contact(name):
     conn.commit()
     conn.close()
 
-def search_contact(name):
-    conn = sqlite3.connect('contacts.db')
-    cursor = conn.cursor()
-    cursor.execute('SELECT * FROM contacts WHERE name = ?', (name,))
-    contact = cursor.fetchone()
-    conn.close()
-    if contact:
-        print(f"Found contact: Name: {contact[1]}, Phone: {contact[2]}")
-    else:
-        print("Contact not found.")
 
 def list_contacts():
     conn = sqlite3.connect('contacts.db')
