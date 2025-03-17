@@ -6,7 +6,7 @@ def main():
     
     while True:
         print("\nContacts App")
-        print("1. See all contacts")
+        print("9g. See all contacts")
         print("2. Add a contact")
         print("3. Delete a contact")
         print("4. Search for a contact")
