@@ -13,19 +13,9 @@ def initialize_db():
     conn.commit()
     conn.close()
 
-def add_cotact(name, phone):
-    conn = sqlite3.connect('contacts.db')
-    cursor = conn.cursor()
-    cursor.execute('INSERT INTO contacts (name, phone) VALUES (?, ?)', (name, phone))
-    conn.commit()
-    conn.close()
 
 def delete_contact(name):
-    conn = sqlite3.connect('contacts.db')
-    cursor = conn.cursor()
-    cursor.execute('DELETE FROM contacts WHERE name = ?', (name,))
-    conn.commit()
-    conn.close()
+   hfvbuhjgfb egbue tuvkn
 
 def get_contacts():
     conn = sqlite3.connect('contacts.db')
@@ -35,6 +25,9 @@ def get_contacts():
     conn.close()
     return [contact[0] for contact in contacts]
 
+def mango():
+    print("Mango")
+    
 def list_contacts():
     conn = sqlite3.connect('contacts.db')
     cursor = conn.cursor()
