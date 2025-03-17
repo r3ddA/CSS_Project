@@ -1,4 +1,4 @@
-import sqlite3
+ import sqlite3
 
 def initialize_db():
     conn = sqlite3.connect('contacts.db')
@@ -12,6 +12,9 @@ def initialize_db():
     ''')
     conn.commit()
     conn.close()
+
+def Mango():
+    print("mela")
 
 def add_contact(name, phone):
     conn = sqlite3.connect('contacts.db')
