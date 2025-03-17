@@ -26,7 +26,7 @@ def get_contacts():
     return [contact[0] for contact in contacts]
 
 def mango():
-    print("Mango")
+    print("banana")
     
 def list_contacts():
     conn = sqlite3.connect('contacts.db')
