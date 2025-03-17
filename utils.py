@@ -27,6 +27,13 @@ def delete_contact(name):
     conn.commit()
     conn.close()
 
+def get_contacts():
+    conn = sqlite3.connect('contacts.db')
+    cursor = conn.cursor()
+    cursor.execute('SELECT name FROM contacts')
+    contacts = cursor.fetchall()
+    conn.close()
+    return [contact[0] for contact in contacts]
 
 def list_contacts():
     conn = sqlite3.connect('contacts.db')
